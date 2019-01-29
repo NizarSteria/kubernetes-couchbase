@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: couchbase-pod
+  labels:
+    name: couchbase-pod
+spec:
+  containers:
+  - name: couchbase
+    image: harounaouissaoui/kubernetes-couchbase:k8s
+    ports:
+    - containerPort: 8080
